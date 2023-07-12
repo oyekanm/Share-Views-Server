@@ -13,7 +13,7 @@ dotenv.config()
 const port = process.env.PORT;
 
 const app = express()
-db.sequelize.sync()
+// db.sequelize.sync()
 
 app.use(express.json())
 app.use(cors())
