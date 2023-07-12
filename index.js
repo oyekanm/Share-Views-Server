@@ -25,7 +25,7 @@ app.use("/api/likes",LikesRouter)
 // console.log(port);
 
 app.listen(port,()=>{
-    console.log("app running on port " + port);
+    console.log(process.env.NODE_ENV  + port);
 })
 
 app.use(NotFound)
