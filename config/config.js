@@ -3,14 +3,14 @@ module.exports = {
     "local": {
       "username": "root",
       "password": null,
-      "database": "Viewsdb",
+      "database": "mydb",
       "host": "127.0.0.1",
       "dialect": "mysql"
     }, 
     "development": {
       "username": "root",
       "password": null,
-      "database": "Viewsdb",
+      "database": "mydb",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
@@ -26,7 +26,8 @@ module.exports = {
       "password": process.env.DB_PASSWORD,
       "database": "railway",
       "host": process.env.DB_HOST,
-      "dialect": "mysql"
+      "dialect": "mysql",
+      "port":process.env.DB_PORT
     }
   
 }

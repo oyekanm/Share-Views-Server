@@ -26,13 +26,14 @@ app.use("/api/likes", LikesRouter);
 db.sequelize
   .sync()
   .then(() => {
-    app.listen(port, () => {
-      console.log(process.env.NODE_ENV + port);
-    });
-  })
-  .catch((err) => {
+    console.log("Database connected successfully");
+})
+.catch((err) => {
     console.log(err);
-  });
+});
+app.listen(port, () => {
+  console.log(process.env.NODE_ENV + port);
+});
 
 app.use(NotFound);
 app.use(ErrorBoundary);
