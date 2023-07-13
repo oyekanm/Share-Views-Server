@@ -21,7 +21,6 @@ app.use("/api/comments", commentRouter);
 app.use("/api/auth", UsersRouter);
 app.use("/api/likes", LikesRouter);
 
-// console.log(port);
 
 db.sequelize
   .sync()
